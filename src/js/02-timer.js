@@ -24,8 +24,8 @@ const options = {
         }
         futureTime = selectedDates[0];
         startBtn.disabled = false;
-    },
-};
+  },
+   };
 
 flatpickr(datetimePicker, options);
 
@@ -40,7 +40,7 @@ const timer = {
       deltaTime < 0 ? clearInterval(intervalId) : updateClockFace(time);
     }, 1000);
 
-    startBtn.disabled = false;
+    startBtn.disabled = true;
     datetimePicker.disabled = true;
   },
 };
